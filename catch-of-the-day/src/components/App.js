@@ -3,7 +3,6 @@ import Header from './Header'
 import Order from './Order'
 import Inventory from './Inventory'
 
-
 export default class App extends React.Component {
   render() {
     return(
