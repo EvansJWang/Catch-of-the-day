@@ -3,7 +3,9 @@ import React from 'react';
 export default class Order extends React.Component {
   render() {
     return(
-      <p> Order </p>
+      <div>
+        <h2> Order </h2>
+      </div>
     )
   }
 }
