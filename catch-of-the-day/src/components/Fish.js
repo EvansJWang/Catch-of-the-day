@@ -8,7 +8,7 @@ export default class Fish extends React.Component{
     const buttonText = isAvailable? 'Add To Order' : 'Sold Out!'
     return(
       <li className="menu-fish">
-      <img src={details.image} />
+      <img src={details.image} role="presentation"/>
       <h3 className="fish-name">
         {details.name}
         <span className="price">{formatPrice(details.price)}</span>
@@ -18,4 +18,9 @@ export default class Fish extends React.Component{
       </li>
     )
   }
+}
+Fish.propTypes = {
+  details: React.PropTypes.object,
+  index: React.PropTypes.string,
+  addToOrder: React.PropTypes.func,
 }

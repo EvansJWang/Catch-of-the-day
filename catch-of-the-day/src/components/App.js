@@ -123,3 +123,7 @@ export default class App extends React.Component {
     )
   }
 }
+
+App.propTypes = {
+  params: React.PropTypes.object,
+}
