@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const Header = (props) => {
   return(
     <header className='top'>
@@ -15,6 +14,11 @@ const Header = (props) => {
       <h3 className='tagline'> <span>{props.tagline}</span> </h3>
     </header>
   )
+}
+
+
+Header.propTypes = {
+  tagline: React.PropTypes.string,
 }
 
 export default Header;

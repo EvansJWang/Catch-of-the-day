@@ -30,3 +30,7 @@ createFish(event) {
     )
   }
 }
+
+AddFishForm.propTypes = {
+  addFish: React.PropTypes.func
+}
