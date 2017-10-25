@@ -81,9 +81,6 @@ export default class Inventory extends React.Component {
         <button className="facebook" onClick={() => this.authenticate('facebook')}>
           Login with Facebook
         </button>
-      <button className="anonymous" onClick={() => this.authenticate('anonymously')}>
-        Login Anonymously
-      </button>
       </nav>
     )
   }
