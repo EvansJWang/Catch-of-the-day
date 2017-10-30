@@ -9,7 +9,7 @@ import {BrowserRouter, Match, Miss } from 'react-router';
 
 const Root = () => {
   return(
-    <BrowserRouter>
+    <BrowserRouter basename="getting-fishy-with-it">
       <div>
         <Match exactly pattern='/' component={StorePicker}/>
         <Match exactly pattern='/store/:storeId' component={App}/>
