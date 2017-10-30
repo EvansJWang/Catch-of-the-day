@@ -6,10 +6,10 @@ import NotFound from './components/NotFound'
 import StorePicker from './components/StorePicker'
 
 import {BrowserRouter, Match, Miss } from 'react-router';
-
+const repo = `/${window.location.pathname.split('/')[1]}`;
 const Root = () => {
   return(
-    <BrowserRouter basename="getting-fishy-with-it">
+    <BrowserRouter basename={repo}>
       <div>
         <Match exactly pattern='/' component={StorePicker}/>
         <Match exactly pattern='/store/:storeId' component={App}/>
