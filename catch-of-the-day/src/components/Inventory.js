@@ -103,27 +103,27 @@ export default class Inventory extends React.Component {
   }
 
   render() {
-    const logout = <button onClick={this.logout}>Logout!</button>;
-
-    //check for not logged in
-    if(!this.state.uid) {
-      return <div>{this.renderLogin()}</div>
-    }
-
-    // check if they own the current store
-    if(this.state.uid !== this.state.owner) {
-      return (
-        <div>
-          <p>Sorry you do not own this store</p>
-          {logout}
-        </div>
-      )
-    }
+    // const logout = <button onClick={this.logout}>Logout!</button>;
+    //
+    // //check for not logged in
+    // if(!this.state.uid) {
+    //   return <div>{this.renderLogin()}</div>
+    // }
+    //
+    // // check if they own the current store
+    // if(this.state.uid !== this.state.owner) {
+    //   return (
+    //     <div>
+    //       <p>Sorry you do not own this store</p>
+    //       {logout}
+    //     </div>
+    //   )
+    // }
 
     return(
       <div>
         <h2> Inventory </h2>
-        {logout}
+
         {Object.keys(this.props.fishes).map(this.renderInventory)}
         <AddFishForm addFish={this.props.addFish}/>
         <button onClick={this.props.loadSamples}>Load Sample Fishes</button>
